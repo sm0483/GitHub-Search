@@ -1,13 +1,150 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+    --background:#141C2F;
+    --divback:#1F2A48;
+    --button:#0583F2;
+    --text:#F2F2F2;
+    --sub-font:#0571ff;
+
+
 }
+
+
+
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110vh;
+    border-radius: 1rem;
+    margin: 5rem;
+    background-color:var(--background);
+    
+}
+
+
+.search-bar{
+    font-size: 20px;
+    background-color: var(--divback);
+    display: inline-flex;
+    border-radius: 0.8rem;
+}
+
+.search-bar input{
+    background-color:var(--divback);
+    color:var(--text);
+    border: none;
+    margin: 1rem;
+    padding: 0.1rem;
+    outline: none;
+}
+
+.search-bar label svg{
+    color:var(--button);
+    margin: 1rem;
+    padding: 0.1rem;
+}
+
+.search-bar button{
+    background-color: var(--button);
+    margin: 1rem;
+}
+
+.result-container{
+    background-color: var(--divback);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.box{
+    display: inline-flex;
+ 
+}
+
+.box .img-div{
+    background-color: gainsboro;
+    border-radius: 4rem;
+    padding: 0.1rem;
+    margin: 1rem;
+
+}
+
+.box h1{
+    color:var(--text);
+    font-family:'Montserrat';
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.box h2{
+    color:var(--sub-font);
+    font-family:'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.box h3{
+    color:var(--text);
+    font-family:'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 1rem;
+}
+
+.box .profile-info{
+    padding: 0.1rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+
+}
+
+.follow-data{
+    background-color: var(--background);
+    color: var(--text);
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow-data span{
+    padding: 1rem;
+
+}
+
+.follow-data span h4{
+    font-size: 20px;
+}
+
+.follow-data span h5{
+    font-size: 15px;
+}
+
+.basic-details{
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: space-around;
+  align-items:center;
+  padding-top: 2rem;
+}
+
+.basic-details h3{
+    font-size: 14px;
+    color: var(--text);
+    padding: 0.2rem;
+}
+
+a:link{
+    text-decoration: none;
+    padding: 1rem;
+}
+
