@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -77,21 +78,21 @@
 
 .box h1{
     color:var(--text);
-    font-family:'Raleway';
+    font-family: 'Amiko', sans-serif;
     font-weight: 500;
     font-size: 25px;
 }
 
 .box h2{
     color:var(--sub-font);
-    font-family:'Raleway';
+    font-family: 'Amiko', sans-serif;
     font-weight: 400;
     font-size: 14px;
 }
 
 .box h3{
     color:var(--text);
-    font-family:'Raleway';
+    font-family: 'Amiko', sans-serif;
     font-weight: 500;
     font-size: 15px;
     padding-top: 1rem;
@@ -128,7 +129,7 @@
 
 .follow-data span h5{
     font-size: 15px;
-    font-family:'Raleway';
+    font-family: 'Amiko', sans-serif;
     font-weight: 400;
 }
 
@@ -176,6 +177,11 @@ a:active{
 a:visited{
     text-decoration: none;
     color: var(--text);
+}
+
+::placeholder{
+    font-family: 'Amiko', sans-serif;
+    font-weight: 500;
 }
 
 
