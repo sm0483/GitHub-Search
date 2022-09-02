@@ -8,7 +8,7 @@
     --background:#141C2F;
     --divback:#1F2A48;
     --button:#0583F2;
-    --text:#F2F2F2;
+    --text:#c4c2c2;
     --sub-font:#0571ff;
 
 
@@ -77,21 +77,21 @@
 
 .box h1{
     color:var(--text);
-    font-family:'Montserrat';
+    font-family:'Raleway';
     font-weight: 500;
     font-size: 25px;
 }
 
 .box h2{
     color:var(--sub-font);
-    font-family:'Montserrat';
+    font-family:'Raleway';
     font-weight: 400;
     font-size: 14px;
 }
 
 .box h3{
     color:var(--text);
-    font-family:'Montserrat';
+    font-family:'Raleway';
     font-weight: 500;
     font-size: 15px;
     padding-top: 1rem;
@@ -122,29 +122,62 @@
 
 .follow-data span h4{
     font-size: 20px;
+    font-weight: 500;
+
 }
 
 .follow-data span h5{
     font-size: 15px;
+    font-family:'Raleway';
+    font-weight: 400;
 }
 
 .basic-details{
   display: flex;
-  padding: 1rem;
-  margin: 1rem;
-  justify-content: space-around;
-  align-items:center;
-  padding-top: 2rem;
+  padding: 3rem;
+  margin: 0.1rem;
+  padding-top: 3rem;
+  flex-wrap:wrap;
 }
 
-.basic-details h3{
-    font-size: 14px;
-    color: var(--text);
-    padding: 0.2rem;
+
+.basic-details span{
+    padding: 0.1rem;
+    margin: 0.2rem;
+    display:inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 1rem;
 }
 
-a:link{
+.basic-details span label{
+    color:var(--text);
+
+}
+
+.basic-details h3 {
+
+    margin-left: 0.2rem;
+}
+
+.basic-details h3 a:link{
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.1rem;
+    color: var(--text);
+    font-size: 11px;
 }
+
+a:active{
+    text-decoration: none;
+    color: var(--text);
+}
+
+
+a:visited{
+    text-decoration: none;
+    color: var(--text);
+}
+
+
+
 

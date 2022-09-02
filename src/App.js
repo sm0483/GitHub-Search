@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button} from 'react-bootstrap'
 import Search from './components/Search';
 import Result from './components/Result';
 
@@ -8,7 +7,6 @@ function App() {
     <main className='main-container'>
         <Search/>
         <Result/>
-     
     </main>
   );
 }
