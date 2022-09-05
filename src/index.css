@@ -159,7 +159,9 @@
   padding: 3rem;
   margin: 0.1rem;
   padding-top: 3rem;
-  flex-wrap:wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
 }
 
 
@@ -205,6 +207,9 @@ a:visited{
     font-weight: 500;
 }
 
+.loding-container{
+    background-color:white;
+}
 
 
 

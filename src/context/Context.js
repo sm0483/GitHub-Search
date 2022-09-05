@@ -10,6 +10,8 @@ const AppProvider=({children})=>{
     const [wait,setWait]=useState(true);
     const [data,setData]=useState([]);
     const [err,setErr]=useState(false);
+    const [isLoading,setIsLoading]=useState(true);
+    const [notFound,setNotFound]=useState(false);
 
     const controller=new AbortController();
 
@@ -29,9 +31,12 @@ const AppProvider=({children})=>{
                 }
             })
             .then((data)=>{
+                console.log(data);
                 setData(data.data);
+                setIsLoading(false);
             })
             .catch((err)=>{
+                setIsLoading(false);
                 setErr(true);
             })
 
@@ -48,7 +53,11 @@ const AppProvider=({children})=>{
             setSearch,
             data,
             setData,
-            getData
+            getData,
+            err,
+            isLoading,
+            notFound,
+            wait
         }}
         >
             {children}

@@ -7,7 +7,8 @@ import { useGlobalContext } from '../context/Context'
 
 
 const Result = () => {
-    const {data}=useGlobalContext();   
+    const {data,err,isLoading,notFound,wait}=useGlobalContext();  
+
     
     if(data.length!==0){
     return (
@@ -43,22 +44,21 @@ const Result = () => {
             <footer className="basic-details">
                 <span>
                     <label htmlFor=""><GiPositionMarker/></label>
-                    <h3><a href="#add" >{data.location===null ? 'Not availible':data.location}</a></h3>
+                    <h3><a href={data.location===null ? 'Not availible':"https://www.google.com/maps/place/"+data.location} >{data.location===null ? 'Not availible':data.location}</a></h3>
                 </span>
 
                 <span>
                     <label htmlFor=""><FiTwitter/></label>
-                    <h3><a href="#twitter">{ data.twitter_username===null ? 'Not availible':data.twitter_username}</a></h3>
+                    <h3><a href={data.twitter_username===null ? 'Not availible':"https://twitter.com/"+data.twitter_username}>{ data.twitter_username===null ? 'Not availible':data.twitter_username}</a></h3>
                 </span>
 
                 <span>
                     <label htmlFor=""><BsLink45Deg/></label>
-                    {console.log(data.email)}
                     <h3><a href="#github-blog" >{data.email===null ? 'Not availible':data.email}</a></h3>
                 </span>
                 <span>
                     <label htmlFor=""><CgOrganisation/></label>
-                    <h3><a href="#webpage">{data.organizations_url===null ? 'Not availible':data.organizations_url}</a></h3>
+                    <h3><a href={data.organizations_url===null ? 'Not availible':data.organizations_url}>{data.organizations_url===null ? 'Not availible':data.organizations_url}</a></h3>
                 </span>  
             </footer>
 
