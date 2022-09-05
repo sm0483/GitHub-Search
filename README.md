@@ -15,6 +15,11 @@
 ```js
     https://api.github.com/search/users?q=ms0483
 
+    //other way to get data
+    //using this url
+
+    https://api.github.com/users/{username}
+
     //here ms0483 is the username query
 
 ```
@@ -35,4 +40,7 @@ axios.get('https://api.github.com/search/users?q=ms0483',{
 
 ```
 
+```js
+Ref:/home/user/Desktop/react-project/github-app
 
+```

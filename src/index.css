@@ -29,6 +29,14 @@
 }
 
 
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
 .search-bar{
     font-size: 20px;
     background-color: var(--divback);
@@ -61,7 +69,11 @@
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 .box{
     display: inline-flex;
@@ -73,7 +85,14 @@
     border-radius: 4rem;
     padding: 0.1rem;
     margin: 1rem;
+    background-color: var(--divback);
 
+}
+
+.box .img-div img{
+    width: 128px;
+    height: 128px;
+    border-radius: 4rem;
 }
 
 .box h1{
@@ -96,6 +115,8 @@
     font-weight: 500;
     font-size: 15px;
     padding-top: 1rem;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .box .profile-info{
