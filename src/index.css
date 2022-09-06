@@ -53,10 +53,15 @@
     outline: none;
 }
 
+.search-bar label{
+    margin-left: 0.25rem;
+}
+
 .search-bar label svg{
     color:var(--button);
     margin: 1rem;
     padding: 0.1rem;
+    
 }
 
 .search-bar button{
@@ -207,7 +212,7 @@ a:visited{
     font-weight: 500;
 }
 
-.loading-container{
+.notfound-container{
     background-color:var(--divback);
     color: var(--text);
     padding: 1rem;
@@ -215,9 +220,41 @@ a:visited{
     border-radius: 1rem;
 }
 
-.loading-container img{
+.notfound-container img{
     width: 475px;
     border: 1rem thin black;
+    border-radius: 1rem;
+}
+
+/* no internet */
+
+
+.internet{
+    background-color:var(--divback);
+    color: var(--text);
+    padding: 1rem;
+    margin-top:1.5rem;
+    border-radius: 1rem;
+}
+
+.internet img{
+    width: 475px;
+    border: 1rem thin black;
+    border-radius: 1rem;
+}
+
+/* loading */
+
+.loading{
+    background-color: wheat;
+    padding: 0.9rem;
+    margin-top:1.5rem;
+    border-radius: 1rem;
+    background-color: var(--divback);
+}
+
+.loading svg{
+    padding:1rem;
     border-radius: 1rem;
 }
 

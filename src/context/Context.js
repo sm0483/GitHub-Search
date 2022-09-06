@@ -12,6 +12,7 @@ const AppProvider=({children})=>{
     const [err,setErr]=useState(false);
     const [isLoading,setIsLoading]=useState(false);
     const [notFound,setNotFound]=useState('');
+    const [noInternet,setNoInternet]=useState(false);
 
 
 
@@ -37,12 +38,13 @@ const AppProvider=({children})=>{
             })
             .catch((err)=>{
                 if(search!=='')setNotFound(err.response.status);
+                if(err.response.status===0) setNoInternet(true);
                 setIsLoading(false);
                 setErr(true);
             })
 
             return ()=>{
-                controller.abort();
+                return controller.abort();
             }
         
     },[wait])
@@ -58,7 +60,7 @@ const AppProvider=({children})=>{
             err,
             isLoading,
             notFound,
-            wait
+            noInternet
         }}
         >
             {children}

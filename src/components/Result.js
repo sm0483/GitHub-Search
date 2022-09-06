@@ -1,5 +1,5 @@
 import logo from '../images/logo.png'
-import {BsLink45Deg, BsShield} from 'react-icons/bs'
+import {BsLink45Deg,} from 'react-icons/bs'
 import {GiPositionMarker} from 'react-icons/gi'
 import {FiTwitter} from 'react-icons/fi'
 import {CgOrganisation} from 'react-icons/cg'
@@ -8,16 +8,16 @@ import notfound from '../images/notfound.jpeg'
 
 
 const Result = () => {
-    const {data,err,isLoading,notFound,wait}=useGlobalContext();  
+    const {data,err,isLoading,notFound,wait,noInternet}=useGlobalContext();  
 
-    if(notFound===404 && err){
-        return (<div className="loading-container">
+    if(notFound===404 && err && !noInternet){
+        return (<div className="notfound-container">
             <img src={notfound} alt="not found" />
         </div>)
     }
 
     
-    if(data.length!==0){
+    if(data.length!==0 && !noInternet){
         return (
             <div className="result-container">
                 <article className='box'>
@@ -73,7 +73,7 @@ const Result = () => {
             
         );
     }
-    else{
+    else if(!noInternet){
         return (
             <div className="result-container">
 
