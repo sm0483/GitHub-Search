@@ -207,8 +207,18 @@ a:visited{
     font-weight: 500;
 }
 
-.loding-container{
-    background-color:white;
+.loading-container{
+    background-color:var(--divback);
+    color: var(--text);
+    padding: 1rem;
+    margin-top:1.5rem;
+    border-radius: 1rem;
+}
+
+.loading-container img{
+    width: 475px;
+    border: 1rem thin black;
+    border-radius: 1rem;
 }
 
 

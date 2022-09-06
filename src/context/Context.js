@@ -10,10 +10,9 @@ const AppProvider=({children})=>{
     const [wait,setWait]=useState(true);
     const [data,setData]=useState([]);
     const [err,setErr]=useState(false);
-    const [isLoading,setIsLoading]=useState(true);
-    const [notFound,setNotFound]=useState(false);
+    const [isLoading,setIsLoading]=useState(false);
+    const [notFound,setNotFound]=useState('');
 
-    const controller=new AbortController();
 
 
     const getData=(e)=>{
@@ -22,6 +21,7 @@ const AppProvider=({children})=>{
     }
 
     useEffect(()=>{
+        const controller=new AbortController();
         const data=axios.get(`https://api.github.com/users/${search}`,
             {signal:controller.signal},
             {
@@ -31,11 +31,12 @@ const AppProvider=({children})=>{
                 }
             })
             .then((data)=>{
-                console.log(data);
+                setNotFound('')
                 setData(data.data);
                 setIsLoading(false);
             })
             .catch((err)=>{
+                if(search!=='')setNotFound(err.response.status);
                 setIsLoading(false);
                 setErr(true);
             })
