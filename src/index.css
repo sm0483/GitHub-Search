@@ -213,16 +213,15 @@ a:visited{
 }
 
 .notfound-container{
-    background-color:var(--divback);
-    color: var(--text);
-    padding: 1rem;
+    border-radius: 1rem;
+    padding: 0.9rem;
     margin-top:1.5rem;
     border-radius: 1rem;
+    background-color: var(--divback);
 }
 
-.notfound-container img{
-    width: 475px;
-    border: 1rem thin black;
+.notfound-container svg{
+    padding:1rem;
     border-radius: 1rem;
 }
 
@@ -230,7 +229,6 @@ a:visited{
 
 
 .internet{
-    background-color: wheat;
     padding: 0.9rem;
     margin-top:1.5rem;
     border-radius: 1rem;

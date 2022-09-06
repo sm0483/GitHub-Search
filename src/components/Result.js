@@ -4,11 +4,11 @@ import {GiPositionMarker} from 'react-icons/gi'
 import {FiTwitter} from 'react-icons/fi'
 import {CgOrganisation} from 'react-icons/cg'
 import { useGlobalContext } from '../context/Context'
-import notfound from '../images/notfound.jpeg'
+
 
 
 const Result = () => {
-    const {data,isLoading,wait,noInternet,notfound}=useGlobalContext();  
+    const {data,noInternet}=useGlobalContext();  
 
     
 

@@ -14,7 +14,7 @@ const Internet = () => {
                 container:container.current,
                 renderer:'svg',
                 autoplay: true,
-                animationData:require('../images/internet.json')
+                animationData:internetLogo
             });
 
         return ()=>inst.destroy();
