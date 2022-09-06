@@ -10,7 +10,7 @@ const AppProvider=({children})=>{
     const [wait,setWait]=useState(true);
     const [data,setData]=useState([]);
     const [err,setErr]=useState(false);
-    const [isLoading,setIsLoading]=useState(false);
+    const [isLoading,setIsLoading]=useState(true);
     const [notFound,setNotFound]=useState('');
     const [noInternet,setNoInternet]=useState(false);
 
@@ -60,7 +60,8 @@ const AppProvider=({children})=>{
             err,
             isLoading,
             notFound,
-            noInternet
+            noInternet,
+            setIsLoading
         }}
         >
             {children}

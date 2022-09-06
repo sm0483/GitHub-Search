@@ -4,15 +4,20 @@ import {GiPositionMarker} from 'react-icons/gi'
 import {FiTwitter} from 'react-icons/fi'
 import {CgOrganisation} from 'react-icons/cg'
 import { useGlobalContext } from '../context/Context'
+import Loading from './Loading'
 
 
 
 const Result = () => {
-    const {data,noInternet}=useGlobalContext();  
+    const {data,noInternet,isLoading}=useGlobalContext();  
+    if(isLoading){
+        return (
+            <div className="result-container">
+                <Loading/>
+            </div>
+        )
+    }
 
-    
-
-    
     if(data.length!==0 && !noInternet){
         return (
             <div className="result-container">
