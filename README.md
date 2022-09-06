@@ -99,36 +99,40 @@ export default Loading;
 ```
 
 
-  <style>
-    img{border:8px solid black;border-radius: 2rem;width:500px;height:600px;padding:0.2rem;margin:2rem;
-}
 
-*{
-  padding:0.5rem;
-  margin:0.2rem;
-}
-    
-  </style>
 
 ## Working of Application
 
-&rarr;normal data tab
+<div>
 
 
-![](static/images/normal-google.png)
+
+&rarr;Normal data tab
+
+
+<img src='./static/images/normal-google.png' width="400" height="500" >
 
 
 &rarr; Loading  component
 
-![](static/gif/offcial.gif)
 
-&rarr;no internet component
 
-![](static/images/nointernet.png)
+<img src='./static/gif/offcial.gif' width="400" 
+height="500" >
 
-&rarr; No dat found tab
+&rarr;No internet component
 
-![](static/images/notfound.png)
 
+
+<img src='./static/images/nointernet.png' width="400" height="500">
+
+
+&rarr; No data found tab
+
+
+
+<img src='./static/images/notfound.png' width="400" height="500">
+
+</div>
 
 
