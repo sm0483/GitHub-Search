@@ -8,13 +8,9 @@ import notfound from '../images/notfound.jpeg'
 
 
 const Result = () => {
-    const {data,err,isLoading,notFound,wait,noInternet}=useGlobalContext();  
+    const {data,isLoading,wait,noInternet,notfound}=useGlobalContext();  
 
-    if(notFound===404 && err && !noInternet){
-        return (<div className="notfound-container">
-            <img src={notfound} alt="not found" />
-        </div>)
-    }
+    
 
     
     if(data.length!==0 && !noInternet){

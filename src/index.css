@@ -230,16 +230,15 @@ a:visited{
 
 
 .internet{
-    background-color:var(--divback);
-    color: var(--text);
-    padding: 1rem;
+    background-color: wheat;
+    padding: 0.9rem;
     margin-top:1.5rem;
     border-radius: 1rem;
+    background-color: var(--divback);
 }
 
-.internet img{
-    width: 475px;
-    border: 1rem thin black;
+.internet svg{
+    padding:1rem;
     border-radius: 1rem;
 }
 
