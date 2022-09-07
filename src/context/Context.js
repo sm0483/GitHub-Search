@@ -1,5 +1,4 @@
 import React from "react";
-import keys from '../config/Keys'
 import { useState,useEffect,useContext } from "react";
 import axios from 'axios';
 const AppContext=React.createContext();
@@ -27,8 +26,8 @@ const AppProvider=({children})=>{
             {signal:controller.signal},
             {
                 auth:{
-                    username:keys.username,
-                    password:keys.password
+                    username:process.env.USER_NAME,
+                    password:process.env.PASSWORD
                 }
             })
             .then((data)=>{
