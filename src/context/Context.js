@@ -42,6 +42,8 @@ const AppProvider=({children})=>{
                 setErr(true);
             })
 
+            //eslint-disable-next-line react-hooks/exhaustive-deps
+
             return ()=>{
                 return controller.abort();
             }

@@ -22,9 +22,8 @@
     align-items: center;
     justify-content: center;
     min-height: 110vh;
-    border-radius: 1rem;
-    margin: 5rem;
     background-color:var(--background);
+    padding: 0.5rem;
     
 }
 
@@ -34,14 +33,16 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 500px;
+    width: 32rem;
+    padding: 0.1rem;
 }
 
 .search-bar{
-    font-size: 20px;
+    font-size: 1.2rem;
     background-color: var(--divback);
     display: inline-flex;
     border-radius: 0.8rem;
+    margin: 0.2rem;
 }
 
 .search-bar input{
@@ -72,6 +73,9 @@
 .result-container{
     background-color: var(--divback);
     padding: 1rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
     margin-top: 1rem;
     border-radius: 1rem;
     display: flex;
@@ -81,8 +85,7 @@
 
 
 .box{
-    display: inline-flex;
- 
+    display: flex;
 }
 
 .box .img-div{
@@ -95,8 +98,8 @@
 }
 
 .box .img-div img{
-    width: 128px;
-    height: 128px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 4rem;
 }
 
@@ -104,21 +107,21 @@
     color:var(--text);
     font-family: 'Amiko', sans-serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.8rem;
 }
 
 .box h2{
     color:var(--sub-font);
     font-family: 'Amiko', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 .box h3{
     color:var(--text);
     font-family: 'Amiko', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
     padding-top: 1rem;
     display:flex;
     flex-wrap: wrap;
@@ -148,13 +151,13 @@
 }
 
 .follow-data span h4{
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 500;
 
 }
 
 .follow-data span h5{
-    font-size: 15px;
+    font-size: 0.9rem;
     font-family: 'Amiko', sans-serif;
     font-weight: 400;
 }
@@ -193,7 +196,7 @@
     text-decoration: none;
     padding: 0.1rem;
     color: var(--text);
-    font-size: 11px;
+    font-size: 0.688rem;
 }
 
 a:active{
