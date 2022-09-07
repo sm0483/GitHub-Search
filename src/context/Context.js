@@ -26,8 +26,8 @@ const AppProvider=({children})=>{
             {signal:controller.signal},
             {
                 auth:{
-                    username:USER_NAME,
-                    password:PASSWORD
+                    username:process.env.USER_NAME,
+                    password:process.env.PASSWORD
                 }
             })
             .then((data)=>{
